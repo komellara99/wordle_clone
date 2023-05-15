@@ -1,0 +1,122 @@
+* {
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    background-color: #264653;
+}
+
+.title-container {
+    text-align: center;
+    
+    width: 510px;
+    border-bottom: solid 1px #2a9d8f;
+}
+.container {
+    align-items: center;
+    display: flex;
+    height: 90vh;
+    flex-direction: column;
+   justify-content: space-between; 
+    
+}
+
+.tile.flip {
+    animation: 0.5s linear flipping;
+}
+
+@keyframes flipping {
+    0% {
+        transform: rotateX(0deg);
+    }
+    50% {
+        transform: rotateX(90deg);
+    }
+    100% {
+        transform: rotateX(0deg);
+    }
+}
+
+.title-container{
+    margin-bottom: 5px;
+    width: 300px;
+}
+
+p {
+    background-color: #e9c46a ;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0;
+}
+
+.key-container{
+    width: 510px;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.key-container button {
+    width: 43px;
+    height: 55px;
+    border-radius: 4px;
+    border: none;
+    background-color: #2a9d8f;
+    color: white;
+    margin: 4px;
+    padding: 2px;
+}
+.key-container button:nth-child(11){
+    margin-left: 30px;
+}
+.key-container button:nth-child(20),
+.key-container button:nth-child(28){
+    width: 66px;
+}
+.tile-container {
+    margin: 10px;
+}
+.tile-container div {
+    display: flex;
+}
+.tile-container .tile {
+    width: 62px;
+    height: 62px;
+    border: 2px solid #2a9d8f;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #264653;
+    margin: 2px;
+}
+.message-container {
+    height: 30px;
+    margin: 7px;
+}
+
+
+.notIn-overlay {
+    background-color: #2a9d8f !important;
+    border: none !important;
+    opacity: 100% !important;
+    ;
+}
+.inWord-overlay {
+    background-color: #e9c46a !important;
+    border: none !important;
+    opacity: 100% !important;
+    ;
+}
+.rightSpot-overlay {
+    background-color: #e76f51 !important;
+    border: none !important;
+    opacity: 100% !important;
+    ;
+}
+
+.keyboard-not-in {
+    background-color: #264653 !important;
+    border: 2px !important;
+    border-color: #2a9d8f;
+}
